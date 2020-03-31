@@ -47,7 +47,7 @@
                             <input name="survey[name]" type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter Name">
                             <small id="nameHelp" class="form-text text-muted">Hello! What's your name?</small>
 
-                            @error('name')
+                            @error('survey.name')
                                 <small class="text-danger">{{ $message }}</small>
                             @enderror
                         </div>
@@ -57,7 +57,7 @@
                             <input name="survey[email]" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Email">
                             <small id="emailHelp" class="form-text text-muted">Your Email Please!</small>
 
-                            @error('email')
+                            @error('survey.email')
                             <small class="text-danger">{{ $message }}</small>
                             @enderror
                         </div>
